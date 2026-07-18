@@ -3,6 +3,7 @@ package com.mufcabot.app
 import android.content.Context
 import android.content.SharedPreferences
 import android.util.Log
+import androidx.core.content.edit
 import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKey
 
@@ -41,7 +42,7 @@ object Prefs {
                 FILE_NAME,
                 masterKey,
                 EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
-                EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
+                EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM,
             )
         } catch (e: Exception) {
             Log.w(TAG, "EncryptedSharedPreferences unavailable, falling back to plain storage", e)
@@ -62,15 +63,15 @@ object Prefs {
         prefs(context).getString(KEY_PASSWORD, "") ?: ""
 
     fun save(context: Context, serverUrl: String, username: String, password: String) {
-        prefs(context).edit()
-            .putString(KEY_SERVER_URL, serverUrl.trimEnd('/'))
-            .putString(KEY_USERNAME, username)
-            .putString(KEY_PASSWORD, password)
-            .apply()
+        prefs(context).edit {
+            putString(KEY_SERVER_URL, serverUrl.trimEnd('/'))
+            putString(KEY_USERNAME, username)
+            putString(KEY_PASSWORD, password)
+        }
     }
 
     fun clear(context: Context) {
-        prefs(context).edit().clear().apply()
+        prefs(context).edit { clear() }
     }
 }
 

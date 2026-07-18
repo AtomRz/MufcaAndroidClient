@@ -2,7 +2,6 @@ package com.mufcabot.app
 
 import android.app.NotificationManager
 import android.app.PendingIntent
-import android.content.Context
 import android.content.Intent
 import androidx.core.app.NotificationCompat
 import com.google.firebase.messaging.FirebaseMessagingService
@@ -43,7 +42,7 @@ class MufcaFirebaseMessagingService : FirebaseMessagingService() {
             this,
             Random.nextInt(),
             intent,
-            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE,
         )
 
         val notification = NotificationCompat.Builder(this, MufcaApp.NOTIFICATION_CHANNEL_ID)
@@ -56,7 +55,7 @@ class MufcaFirebaseMessagingService : FirebaseMessagingService() {
             .setContentIntent(pendingIntent)
             .build()
 
-        val manager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        val manager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
         manager.notify(Random.nextInt(), notification)
     }
 }

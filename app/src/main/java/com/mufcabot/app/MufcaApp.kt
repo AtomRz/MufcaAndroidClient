@@ -17,7 +17,7 @@ class MufcaApp : Application() {
             val channel = NotificationChannel(
                 NOTIFICATION_CHANNEL_ID,
                 "Trading signals",
-                NotificationManager.IMPORTANCE_HIGH
+                NotificationManager.IMPORTANCE_HIGH,
             ).apply {
                 description = "New signals, TP1 hits, and other MUFCA alerts"
             }

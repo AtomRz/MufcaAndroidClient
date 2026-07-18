@@ -183,7 +183,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
-        binding.webview.destroy()
+        if (::binding.isInitialized) {
+            binding.webview.destroy()
+        }
         super.onDestroy()
     }
 }

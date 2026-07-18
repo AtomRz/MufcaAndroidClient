@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:hint="Password"
-            app:passwordToggleEnabled="true">
+            app:endIconMode="password_toggle">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/inputPassword"
                 android:layout_width="match_parent"
