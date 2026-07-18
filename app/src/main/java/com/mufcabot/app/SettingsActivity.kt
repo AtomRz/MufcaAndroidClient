@@ -52,8 +52,16 @@ class SettingsActivity : AppCompatActivity() {
                 Prefs.save(this, serverUrl, username, password)
                 showStatus("Connected ✓", isError = false)
 
-                FirebaseMessaging.getInstance().token.addOnSuccessListener { token ->
-                    ApiClient.registerDevice(applicationContext, token)
+                // 🆕 FIX: FirebaseMessaging может бросить исключение синхронно, если Firebase
+                // не смог инициализироваться (например образ эмулятора без Google Play Services).
+                // Push-уведомления — не критичная часть приложения, дашборд должен открыться
+                // в любом случае.
+                try {
+                    FirebaseMessaging.getInstance().token
+                        .addOnSuccessListener { token -> ApiClient.registerDevice(applicationContext, token) }
+                        .addOnFailureListener { e -> android.util.Log.w("MufcaSettings", "FCM token fetch failed", e) }
+                } catch (e: Exception) {
+                    android.util.Log.w("MufcaSettings", "Firebase unavailable, push notifications disabled", e)
                 }
 
                 startActivity(

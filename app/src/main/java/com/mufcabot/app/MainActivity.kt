@@ -102,8 +102,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun ensureFcmTokenRegistered() {
-        FirebaseMessaging.getInstance().token.addOnSuccessListener { token ->
-            ApiClient.registerDevice(applicationContext, token)
+        try {
+            FirebaseMessaging.getInstance().token
+                .addOnSuccessListener { token -> ApiClient.registerDevice(applicationContext, token) }
+                .addOnFailureListener { e -> android.util.Log.w("MufcaMain", "FCM token fetch failed", e) }
+        } catch (e: Exception) {
+            android.util.Log.w("MufcaMain", "Firebase unavailable, push notifications disabled", e)
         }
     }
 

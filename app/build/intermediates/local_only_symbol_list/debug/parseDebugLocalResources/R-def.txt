@@ -1,0 +1,32 @@
+R_DEF: Internal format may change without notice
+local
+color accent
+color bg
+color bg_panel
+color bg_panel_raised
+color long_color
+color short_color
+color text
+drawable ic_launcher
+drawable ic_notification
+id action_reload
+id action_settings
+id btnSave
+id inputPassword
+id inputServerUrl
+id inputUsername
+id statusText
+id swipeRefresh
+id webview
+layout activity_main
+layout activity_settings
+menu main_menu
+string app_name
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
+string project_id
+string settings_title
+style Theme.MufcaBot
