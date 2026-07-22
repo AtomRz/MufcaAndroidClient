@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Явная network security config (вместо/в дополнение к android:usesCleartextTraffic="false"
+  в манифесте). Даёт нам одно определённое место для будущих правок вместо разрозненных
+  флагов, и явно документирует решение не делать certificate pinning.
+
+  Пиннинг сертификата НЕ используется намеренно: сервер отдаётся через Cloudflare Tunnel,
+  TLS терминируется на стороне Cloudflare. Пиннинг к их сертификату означал бы, что ротация
+  сертификата на стороне Cloudflare (вне нашего контроля и без предупреждения) сломает
+  приложение до выпуска нового релиза. HTTPS + запрет cleartext ниже закрывают MITM в
+  подавляющем большинстве сценариев без этого риска.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

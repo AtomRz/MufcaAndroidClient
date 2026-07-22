@@ -64,7 +64,34 @@ class MainActivity : AppCompatActivity() {
         webView.settings.javaScriptEnabled = true
         webView.settings.domStorageEnabled = true // нужен для localStorage — там живёт auth-токен дашборда
 
+        val dashboardHost = try {
+            android.net.Uri.parse(Prefs.getServerUrl(this)).host
+        } catch (e: Exception) {
+            null
+        }
+
         webView.webViewClient = object : WebViewClient() {
+            // Держим WebView привязанным к домену дашборда, который сам пользователь
+            // указал в настройках. Любая другая ссылка (например, если однажды на
+            // странице появится внешний URL) уходит во внешний браузер, а не
+            // открывается внутри WebView — так WebView не превращается в универсальный
+            // браузер с доступом к JS-мосту mufcaOpenSignal.
+            override fun shouldOverrideUrlLoading(
+                view: WebView?,
+                request: WebResourceRequest?
+            ): Boolean {
+                val requestedHost = request?.url?.host
+                if (dashboardHost != null && requestedHost != null && requestedHost != dashboardHost) {
+                    try {
+                        startActivity(Intent(Intent.ACTION_VIEW, request.url))
+                    } catch (e: Exception) {
+                        android.util.Log.w("MufcaMain", "No app to handle external link", e)
+                    }
+                    return true
+                }
+                return false
+            }
+
             override fun onPageFinished(view: WebView?, url: String?) {
                 super.onPageFinished(view, url)
                 binding.swipeRefresh.isRefreshing = false
