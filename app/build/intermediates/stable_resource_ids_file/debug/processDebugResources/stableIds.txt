@@ -1979,6 +1979,7 @@ com.mufcabot.app:dimen/m3_sys_motion_easing_standard_decelerate_control_y1 = 0x7
 com.mufcabot.app:dimen/m3_sys_motion_easing_standard_decelerate_control_x1 = 0x7f060216
 com.mufcabot.app:attr/cardElevation = 0x7f03009d
 com.mufcabot.app:dimen/m3_sys_motion_easing_standard_control_x2 = 0x7f060213
+com.mufcabot.app:xml/network_security_config = 0x7f130000
 com.mufcabot.app:dimen/mtrl_fab_translation_z_pressed = 0x7f0602b9
 com.mufcabot.app:id/marquee = 0x7f0800fd
 com.mufcabot.app:dimen/m3_sys_motion_easing_standard_accelerate_control_y1 = 0x7f060210

@@ -3,8 +3,8 @@
 # min_api: 24
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.2"}
-# pg_map_id: fac3691a1617bfe67ca18873dde510548aac5a25a9fef7224cf2126e8b00c26e
-# pg_map_hash: SHA-256 fac3691a1617bfe67ca18873dde510548aac5a25a9fef7224cf2126e8b00c26e
+# pg_map_id: d5e49041ed39716a599d1f99dab350a8531e8836b5558ac41dd783697bc1abf8
+# pg_map_hash: SHA-256 d5e49041ed39716a599d1f99dab350a8531e8836b5558ac41dd783697bc1abf8
 android.app.AppComponentFactory -> android.app.AppComponentFactory:
 # {"id":"com.android.tools.r8.synthesized"}
     void <clinit>() -> <clinit>
@@ -1569,27 +1569,27 @@ androidx.activity.OnBackPressedDispatcher -> androidx.activity.y:
     32:33:void onBackPressed():271:271 -> b
     34:37:void onBackPressed():274:274 -> b
     38:42:void onBackPressed():276:276 -> b
-    43:46:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():157:157 -> b
+    43:46:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():180:180 -> b
     43:46:void onBackPressed():276 -> b
-    47:49:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.MainActivity.access$getBinding$p(com.mufcabot.app.MainActivity):23:23 -> b
-    47:49:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():157 -> b
+    47:49:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.MainActivity.access$getBinding$p(com.mufcabot.app.MainActivity):24:24 -> b
+    47:49:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():180 -> b
     47:49:void onBackPressed():276 -> b
-    50:63:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():157:157 -> b
+    50:63:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():180:180 -> b
     50:63:void onBackPressed():276 -> b
-    64:67:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.MainActivity.access$getBinding$p(com.mufcabot.app.MainActivity):23:23 -> b
-    64:67:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():158 -> b
+    64:67:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.MainActivity.access$getBinding$p(com.mufcabot.app.MainActivity):24:24 -> b
+    64:67:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():181 -> b
     64:67:void onBackPressed():276 -> b
-    68:80:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():158:158 -> b
+    68:80:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():181:181 -> b
     68:80:void onBackPressed():276 -> b
     81:82:void androidx.activity.OnBackPressedCallback.setEnabled(boolean):55:55 -> b
-    81:82:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():160 -> b
+    81:82:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():183 -> b
     81:82:void onBackPressed():276 -> b
     83:89:void androidx.activity.OnBackPressedCallback.setEnabled(boolean):56:56 -> b
-    83:89:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():160 -> b
+    83:89:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():183 -> b
     83:89:void onBackPressed():276 -> b
-    90:97:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():161:161 -> b
+    90:97:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():184:184 -> b
     90:97:void onBackPressed():276 -> b
-    98:101:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():157:157 -> b
+    98:101:void com.mufcabot.app.MainActivity$setupBackNavigation$1.handleOnBackPressed():180:180 -> b
     98:101:void onBackPressed():276 -> b
     102:106:void androidx.fragment.app.FragmentManager$1.handleOnBackPressed():429:429 -> b
     102:106:void onBackPressed():276 -> b
@@ -55703,7 +55703,7 @@ androidx.fragment.app.FragmentManager$1 -> androidx.fragment.app.z:
     1:1:void androidx.activity.OnBackPressedCallback.<init>(boolean):41:41 -> <init>
     2:2:void androidx.activity.OnBackPressedCallback.<init>(boolean):53:53 -> <init>
     3:3:void androidx.activity.OnBackPressedCallback.<init>(boolean):59:59 -> <init>
-    4:4:void com.mufcabot.app.MainActivity$setupBackNavigation$1.<init>(com.mufcabot.app.MainActivity):155:155 -> <init>
+    4:4:void com.mufcabot.app.MainActivity$setupBackNavigation$1.<init>(com.mufcabot.app.MainActivity):178:178 -> <init>
     5:5:void <init>(androidx.fragment.app.FragmentManager,boolean):426:426 -> <init>
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroidx/fragment/app/h0;)V"}
 androidx.fragment.app.FragmentManager$10 -> androidx.fragment.app.y:
@@ -65339,7 +65339,7 @@ androidx.recyclerview.widget.GridLayoutManager$DefaultSpanSizeLookup -> z0.n:
     11:11:void androidx.recyclerview.widget.ViewInfoStore.<init>():43:43 -> <init>
     12:12:void androidx.recyclerview.widget.ViewInfoStore.<init>():47:47 -> <init>
     13:14:void kotlin.text.DelimitedRangesSequence.<init>(java.lang.CharSequence,int,int,kotlin.jvm.functions.Function2):1171:1172 -> <init>
-      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/CharSequence;Lh5/d;)V"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/CharSequence;Lh5/f;)V"}
     15:15:void kotlin.text.DelimitedRangesSequence.<init>(java.lang.CharSequence,int,int,kotlin.jvm.functions.Function2):1175:1175 -> <init>
     1:5:void androidx.recyclerview.widget.ViewInfoStore.addToPostLayout(androidx.recyclerview.widget.RecyclerView$ViewHolder,androidx.recyclerview.widget.RecyclerView$ItemAnimator$ItemHolderInfo):182:182 -> a
       # {"id":"com.android.tools.r8.residualsignature","signature":"(Lz0/v0;Lh0/o;)V"}
@@ -77436,7 +77436,7 @@ androidx.swiperefreshlayout.widget.SwipeRefreshLayout$1 -> e1.f:
     53:56:void onAnimationEnd(android.view.animation.Animation):206:206 -> onAnimationEnd
     57:60:void onAnimationEnd(android.view.animation.Animation):207:207 -> onAnimationEnd
     61:68:void onAnimationEnd(android.view.animation.Animation):208:208 -> onAnimationEnd
-    69:71:void com.mufcabot.app.MainActivity.setupWebView$lambda$1(android.webkit.WebView):123:123 -> onAnimationEnd
+    69:71:void com.mufcabot.app.MainActivity.setupWebView$lambda$1(android.webkit.WebView):126:126 -> onAnimationEnd
     69:71:void onAnimationEnd(android.view.animation.Animation):208 -> onAnimationEnd
     72:80:void onAnimationEnd(android.view.animation.Animation):211:211 -> onAnimationEnd
     81:84:void onAnimationEnd(android.view.animation.Animation):213:213 -> onAnimationEnd
@@ -118605,7 +118605,7 @@ com.google.crypto.tink.mac.AesCmacKeyManager$$ExternalSyntheticLambda0 -> b4.b:
     10:15:void b4.AesCmacKeyManager$$ExternalSyntheticLambda0.onFailure(java.lang.Exception):0 -> g
       # {"id":"com.android.tools.r8.synthesized"}
     16:17:void b4.AesCmacKeyManager$$ExternalSyntheticLambda0.onFailure(java.lang.Exception):0:0 -> g
-    18:24:void com.mufcabot.app.MainActivity.ensureFcmTokenRegistered$lambda$3(java.lang.Exception):135:135 -> g
+    18:24:void com.mufcabot.app.MainActivity.ensureFcmTokenRegistered$lambda$3(java.lang.Exception):158:158 -> g
     18:24:void b4.AesCmacKeyManager$$ExternalSyntheticLambda0.onFailure(java.lang.Exception):0 -> g
 com.google.crypto.tink.mac.AesCmacKeyManager$1 -> b4.c:
 # {"id":"sourceFile","fileName":"AesCmacKeyManager.java"}
@@ -143619,7 +143619,7 @@ com.google.firebase.messaging.WakeLockHolder$$ExternalSyntheticLambda0 -> d5.i0:
     12:15:void d5.WakeLockHolder$$ExternalSyntheticLambda0.onSuccess(java.lang.Object):0 -> b
       # {"id":"com.android.tools.r8.synthesized"}
     16:17:void d5.WakeLockHolder$$ExternalSyntheticLambda0.onSuccess(java.lang.Object):0:0 -> b
-    18:22:void com.mufcabot.app.MainActivity.ensureFcmTokenRegistered$lambda$2(kotlin.jvm.functions.Function1,java.lang.Object):134:134 -> b
+    18:22:void com.mufcabot.app.MainActivity.ensureFcmTokenRegistered$lambda$2(kotlin.jvm.functions.Function1,java.lang.Object):157:157 -> b
     18:22:void d5.WakeLockHolder$$ExternalSyntheticLambda0.onSuccess(java.lang.Object):0 -> b
     13:18:java.lang.Object com.google.android.datatransport.runtime.scheduling.jobscheduling.WorkInitializer.lambda$ensureContextsScheduled$0():56:56 -> c
     13:18:java.lang.Object d5.WakeLockHolder$$ExternalSyntheticLambda0.execute():0 -> c
@@ -144806,244 +144806,267 @@ com.mufcabot.app.MainActivity -> com.mufcabot.app.MainActivity:
       # {"id":"com.android.tools.r8.residualsignature","signature":"La2/b;"}
     boolean pageLoaded -> E
     com.mufcabot.app.MainActivity$DeepLink pendingDeepLink -> F
-      # {"id":"com.android.tools.r8.residualsignature","signature":"Lh5/c;"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"Lh5/e;"}
     androidx.activity.result.ActivityResultLauncher notificationPermissionLauncher -> G
       # {"id":"com.android.tools.r8.residualsignature","signature":"Landroidx/activity/result/c;"}
     int $r8$clinit -> H
       # {"id":"com.android.tools.r8.synthesized"}
-    1:3:void access$attemptPendingDeepLink(com.mufcabot.app.MainActivity):23:23 -> <init>
-    1:3:void <init>():23 -> <init>
-    4:6:void notificationPermissionLauncher$lambda$0(java.lang.Boolean):33:33 -> <init>
-    4:6:void <init>():33 -> <init>
+    1:3:void access$attemptPendingDeepLink(com.mufcabot.app.MainActivity):24:24 -> <init>
+    1:3:void <init>():24 -> <init>
+    4:6:void notificationPermissionLauncher$lambda$0(java.lang.Boolean):34:34 -> <init>
+    4:6:void <init>():34 -> <init>
     7:9:void androidx.activity.result.contract.ActivityResultContract.<init>():29:29 -> <init>
     7:9:void androidx.activity.result.contract.ActivityResultContracts$RequestPermission.<init>():218 -> <init>
-    7:9:void <init>():33 -> <init>
-    10:16:void notificationPermissionLauncher$lambda$0(java.lang.Boolean):33:33 -> <init>
-    10:16:void <init>():33 -> <init>
+    7:9:void <init>():34 -> <init>
+    10:16:void notificationPermissionLauncher$lambda$0(java.lang.Boolean):34:34 -> <init>
+    10:16:void <init>():34 -> <init>
     17:18:androidx.activity.result.ActivityResultLauncher androidx.activity.ComponentActivity.registerForActivityResult(androidx.activity.result.contract.ActivityResultContract,androidx.activity.result.ActivityResultCallback):894:894 -> <init>
-    17:18:void <init>():33 -> <init>
+    17:18:void <init>():34 -> <init>
     19:27:androidx.activity.result.ActivityResultLauncher androidx.activity.ComponentActivity.registerForActivityResult(androidx.activity.result.contract.ActivityResultContract,androidx.activity.result.ActivityResultRegistry,androidx.activity.result.ActivityResultCallback):885:885 -> <init>
     19:27:androidx.activity.result.ActivityResultLauncher androidx.activity.ComponentActivity.registerForActivityResult(androidx.activity.result.contract.ActivityResultContract,androidx.activity.result.ActivityResultCallback):894 -> <init>
-    19:27:void <init>():33 -> <init>
+    19:27:void <init>():34 -> <init>
     28:38:androidx.activity.result.ActivityResultLauncher androidx.activity.ComponentActivity.registerForActivityResult(androidx.activity.result.contract.ActivityResultContract,androidx.activity.result.ActivityResultRegistry,androidx.activity.result.ActivityResultCallback):886:886 -> <init>
     28:38:androidx.activity.result.ActivityResultLauncher androidx.activity.ComponentActivity.registerForActivityResult(androidx.activity.result.contract.ActivityResultContract,androidx.activity.result.ActivityResultCallback):894 -> <init>
-    28:38:void <init>():33 -> <init>
+    28:38:void <init>():34 -> <init>
     39:42:androidx.activity.result.ActivityResultLauncher androidx.activity.ComponentActivity.registerForActivityResult(androidx.activity.result.contract.ActivityResultContract,androidx.activity.result.ActivityResultRegistry,androidx.activity.result.ActivityResultCallback):885:885 -> <init>
     39:42:androidx.activity.result.ActivityResultLauncher androidx.activity.ComponentActivity.registerForActivityResult(androidx.activity.result.contract.ActivityResultContract,androidx.activity.result.ActivityResultCallback):894 -> <init>
-    39:42:void <init>():33 -> <init>
-    43:45:void notificationPermissionLauncher$lambda$0(java.lang.Boolean):33:33 -> <init>
-    43:45:void <init>():33 -> <init>
-    1:5:void onCreate(android.os.Bundle):36:36 -> onCreate
-    6:11:void onCreate(android.os.Bundle):38:38 -> onCreate
-    12:21:void onCreate(android.os.Bundle):39:39 -> onCreate
-    22:25:void onCreate(android.os.Bundle):40:40 -> onCreate
-    26:34:void onCreate(android.os.Bundle):44:44 -> onCreate
+    39:42:void <init>():34 -> <init>
+    43:45:void notificationPermissionLauncher$lambda$0(java.lang.Boolean):34:34 -> <init>
+    43:45:void <init>():34 -> <init>
+    1:5:void onCreate(android.os.Bundle):37:37 -> onCreate
+    6:11:void onCreate(android.os.Bundle):39:39 -> onCreate
+    12:21:void onCreate(android.os.Bundle):40:40 -> onCreate
+    22:25:void onCreate(android.os.Bundle):41:41 -> onCreate
+    26:34:void onCreate(android.os.Bundle):45:45 -> onCreate
     35:38:void onCreate(android.os.Bundle):49:49 -> onCreate
     35:38:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean):49 -> onCreate
     35:38:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater):43 -> onCreate
-    35:38:void onCreate(android.os.Bundle):44 -> onCreate
+    35:38:void onCreate(android.os.Bundle):45 -> onCreate
     39:44:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.bind(android.view.View):62:62 -> onCreate
     39:44:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean):53 -> onCreate
     39:44:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater):43 -> onCreate
-    39:44:void onCreate(android.os.Bundle):44 -> onCreate
+    39:44:void onCreate(android.os.Bundle):45 -> onCreate
     45:52:void setupWebView():65:65 -> onCreate
     45:52:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.bind(android.view.View):65 -> onCreate
     45:52:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean):53 -> onCreate
     45:52:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater):43 -> onCreate
-    45:52:void onCreate(android.os.Bundle):44 -> onCreate
+    45:52:void onCreate(android.os.Bundle):45 -> onCreate
     53:57:void setupWebView():70:70 -> onCreate
     53:57:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.bind(android.view.View):70 -> onCreate
     53:57:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean):53 -> onCreate
     53:57:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater):43 -> onCreate
-    53:57:void onCreate(android.os.Bundle):44 -> onCreate
-    58:59:void onCreate(android.os.Bundle):44:44 -> onCreate
-    60:62:void onCreate(android.os.Bundle):45:45 -> onCreate
-    63:70:void setupWebView():63:63 -> onCreate
-    63:70:void onCreate(android.os.Bundle):47 -> onCreate
-    71:78:void setupWebView():64:64 -> onCreate
-    71:78:void onCreate(android.os.Bundle):47 -> onCreate
-    79:85:void setupWebView():65:65 -> onCreate
-    79:85:void onCreate(android.os.Bundle):47 -> onCreate
-    86:99:void setupWebView():68:68 -> onCreate
-    86:99:void onCreate(android.os.Bundle):47 -> onCreate
-    100:107:void setupWebView():73:73 -> onCreate
-    100:107:void onCreate(android.os.Bundle):47 -> onCreate
-    108:124:void setupWebView$lambda$1(android.webkit.WebView):123:123 -> onCreate
-    108:124:void setupWebView():123 -> onCreate
-    108:124:void onCreate(android.os.Bundle):47 -> onCreate
-    125:135:void loadDashboard():127:127 -> onCreate
-    125:135:void onCreate(android.os.Bundle):48 -> onCreate
-    136:150:void loadDashboard():128:128 -> onCreate
-    136:150:void onCreate(android.os.Bundle):48 -> onCreate
-    151:162:void onCreate(android.os.Bundle):49:49 -> onCreate
-    163:164:void ensureFcmTokenRegistered():133:133 -> onCreate
-    163:164:void onCreate(android.os.Bundle):50 -> onCreate
-    165:167:com.google.firebase.messaging.FirebaseMessaging com.google.firebase.messaging.FirebaseMessaging.getInstance():0:0 -> onCreate
-    165:167:void ensureFcmTokenRegistered():133 -> onCreate
-    165:167:void onCreate(android.os.Bundle):50 -> onCreate
-    168:176:com.google.firebase.messaging.FirebaseMessaging com.google.firebase.messaging.FirebaseMessaging.getInstance():121:121 -> onCreate
-    168:176:void ensureFcmTokenRegistered():133 -> onCreate
-    168:176:void onCreate(android.os.Bundle):50 -> onCreate
-    177:179:void ensureFcmTokenRegistered():133:133 -> onCreate
-    177:179:void onCreate(android.os.Bundle):50 -> onCreate
-    180:184:com.google.android.gms.tasks.Task com.google.firebase.messaging.FirebaseMessaging.getToken():417:417 -> onCreate
-    180:184:void ensureFcmTokenRegistered():133 -> onCreate
-    180:184:void onCreate(android.os.Bundle):50 -> onCreate
-    185:194:com.google.android.gms.tasks.Task com.google.firebase.messaging.FirebaseMessaging.getToken():418:418 -> onCreate
-    185:194:void ensureFcmTokenRegistered():133 -> onCreate
-    185:194:void onCreate(android.os.Bundle):50 -> onCreate
-    195:196:com.google.android.gms.tasks.Task com.google.android.gms.tasks.TaskCompletionSource.getTask():0:0 -> onCreate
-    195:196:com.google.android.gms.tasks.Task com.google.firebase.messaging.FirebaseMessaging.getToken():426 -> onCreate
-    195:196:void ensureFcmTokenRegistered():133 -> onCreate
-    195:196:void onCreate(android.os.Bundle):50 -> onCreate
-    197:210:void ensureFcmTokenRegistered$lambda$2(kotlin.jvm.functions.Function1,java.lang.Object):134:134 -> onCreate
-    197:210:void ensureFcmTokenRegistered():134 -> onCreate
-    197:210:void onCreate(android.os.Bundle):50 -> onCreate
-    211:215:com.google.android.gms.tasks.Task com.google.android.gms.tasks.zzw.addOnSuccessListener(com.google.android.gms.tasks.OnSuccessListener):5:5 -> onCreate
-    211:215:void ensureFcmTokenRegistered():134 -> onCreate
-    211:215:void onCreate(android.os.Bundle):50 -> onCreate
-    216:222:void ensureFcmTokenRegistered$lambda$2(kotlin.jvm.functions.Function1,java.lang.Object):134:134 -> onCreate
-    216:222:void ensureFcmTokenRegistered():134 -> onCreate
-    216:222:void onCreate(android.os.Bundle):50 -> onCreate
-    223:229:com.google.android.gms.tasks.Task com.google.android.gms.tasks.zzw.addOnFailureListener(com.google.android.gms.tasks.OnFailureListener):5:5 -> onCreate
-    223:229:void ensureFcmTokenRegistered():135 -> onCreate
-    223:229:void onCreate(android.os.Bundle):50 -> onCreate
-    230:231:com.google.firebase.messaging.FirebaseMessaging com.google.firebase.messaging.FirebaseMessaging.getInstance():121:121 -> onCreate
-    230:231:void ensureFcmTokenRegistered():133 -> onCreate
-    230:231:void onCreate(android.os.Bundle):50 -> onCreate
-    232:238:void ensureFcmTokenRegistered():137:137 -> onCreate
-    232:238:void onCreate(android.os.Bundle):50 -> onCreate
-    239:250:void setupBackNavigation():155:155 -> onCreate
-    239:250:void onCreate(android.os.Bundle):51 -> onCreate
-    251:258:void requestNotificationPermissionIfNeeded():145:145 -> onCreate
-    251:258:void onCreate(android.os.Bundle):52 -> onCreate
-    259:265:void requestNotificationPermissionIfNeeded():146:146 -> onCreate
-    259:265:void onCreate(android.os.Bundle):52 -> onCreate
-    266:267:void requestNotificationPermissionIfNeeded():149:149 -> onCreate
-    266:267:void onCreate(android.os.Bundle):52 -> onCreate
-    268:269:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):164:164 -> onCreate
-    268:269:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
-    268:269:void requestNotificationPermissionIfNeeded():149 -> onCreate
+    53:57:void onCreate(android.os.Bundle):45 -> onCreate
+    58:59:void onCreate(android.os.Bundle):45:45 -> onCreate
+    60:62:void onCreate(android.os.Bundle):46:46 -> onCreate
+    63:70:void setupWebView():64:64 -> onCreate
+    63:70:void onCreate(android.os.Bundle):48 -> onCreate
+    71:78:void setupWebView():65:65 -> onCreate
+    71:78:void onCreate(android.os.Bundle):48 -> onCreate
+    79:85:void setupWebView():66:66 -> onCreate
+    79:85:void onCreate(android.os.Bundle):48 -> onCreate
+    86:99:void setupWebView():69:69 -> onCreate
+    86:99:void onCreate(android.os.Bundle):48 -> onCreate
+    100:107:void setupWebView():74:74 -> onCreate
+    100:107:void onCreate(android.os.Bundle):48 -> onCreate
+    108:124:void setupWebView$lambda$1(android.webkit.WebView):126:126 -> onCreate
+    108:124:void setupWebView():126 -> onCreate
+    108:124:void onCreate(android.os.Bundle):48 -> onCreate
+    125:134:void setupWebView():139:139 -> onCreate
+    125:134:void onCreate(android.os.Bundle):48 -> onCreate
+    135:145:void loadDashboard():150:150 -> onCreate
+    135:145:void onCreate(android.os.Bundle):49 -> onCreate
+    146:160:void loadDashboard():151:151 -> onCreate
+    146:160:void onCreate(android.os.Bundle):49 -> onCreate
+    161:172:void onCreate(android.os.Bundle):50:50 -> onCreate
+    173:174:void ensureFcmTokenRegistered():156:156 -> onCreate
+    173:174:void onCreate(android.os.Bundle):51 -> onCreate
+    175:177:com.google.firebase.messaging.FirebaseMessaging com.google.firebase.messaging.FirebaseMessaging.getInstance():0:0 -> onCreate
+    175:177:void ensureFcmTokenRegistered():156 -> onCreate
+    175:177:void onCreate(android.os.Bundle):51 -> onCreate
+    178:186:com.google.firebase.messaging.FirebaseMessaging com.google.firebase.messaging.FirebaseMessaging.getInstance():121:121 -> onCreate
+    178:186:void ensureFcmTokenRegistered():156 -> onCreate
+    178:186:void onCreate(android.os.Bundle):51 -> onCreate
+    187:189:void ensureFcmTokenRegistered():156:156 -> onCreate
+    187:189:void onCreate(android.os.Bundle):51 -> onCreate
+    190:194:com.google.android.gms.tasks.Task com.google.firebase.messaging.FirebaseMessaging.getToken():417:417 -> onCreate
+    190:194:void ensureFcmTokenRegistered():156 -> onCreate
+    190:194:void onCreate(android.os.Bundle):51 -> onCreate
+    195:204:com.google.android.gms.tasks.Task com.google.firebase.messaging.FirebaseMessaging.getToken():418:418 -> onCreate
+    195:204:void ensureFcmTokenRegistered():156 -> onCreate
+    195:204:void onCreate(android.os.Bundle):51 -> onCreate
+    205:206:com.google.android.gms.tasks.Task com.google.android.gms.tasks.TaskCompletionSource.getTask():0:0 -> onCreate
+    205:206:com.google.android.gms.tasks.Task com.google.firebase.messaging.FirebaseMessaging.getToken():426 -> onCreate
+    205:206:void ensureFcmTokenRegistered():156 -> onCreate
+    205:206:void onCreate(android.os.Bundle):51 -> onCreate
+    207:220:void ensureFcmTokenRegistered$lambda$2(kotlin.jvm.functions.Function1,java.lang.Object):157:157 -> onCreate
+    207:220:void ensureFcmTokenRegistered():157 -> onCreate
+    207:220:void onCreate(android.os.Bundle):51 -> onCreate
+    221:225:com.google.android.gms.tasks.Task com.google.android.gms.tasks.zzw.addOnSuccessListener(com.google.android.gms.tasks.OnSuccessListener):5:5 -> onCreate
+    221:225:void ensureFcmTokenRegistered():157 -> onCreate
+    221:225:void onCreate(android.os.Bundle):51 -> onCreate
+    226:232:void ensureFcmTokenRegistered$lambda$2(kotlin.jvm.functions.Function1,java.lang.Object):157:157 -> onCreate
+    226:232:void ensureFcmTokenRegistered():157 -> onCreate
+    226:232:void onCreate(android.os.Bundle):51 -> onCreate
+    233:239:com.google.android.gms.tasks.Task com.google.android.gms.tasks.zzw.addOnFailureListener(com.google.android.gms.tasks.OnFailureListener):5:5 -> onCreate
+    233:239:void ensureFcmTokenRegistered():158 -> onCreate
+    233:239:void onCreate(android.os.Bundle):51 -> onCreate
+    240:241:com.google.firebase.messaging.FirebaseMessaging com.google.firebase.messaging.FirebaseMessaging.getInstance():121:121 -> onCreate
+    240:241:void ensureFcmTokenRegistered():156 -> onCreate
+    240:241:void onCreate(android.os.Bundle):51 -> onCreate
+    242:248:void ensureFcmTokenRegistered():160:160 -> onCreate
+    242:248:void onCreate(android.os.Bundle):51 -> onCreate
+    249:260:void setupBackNavigation():178:178 -> onCreate
+    249:260:void onCreate(android.os.Bundle):52 -> onCreate
+    261:268:void requestNotificationPermissionIfNeeded():168:168 -> onCreate
+    261:268:void onCreate(android.os.Bundle):53 -> onCreate
+    269:275:void requestNotificationPermissionIfNeeded():169:169 -> onCreate
+    269:275:void onCreate(android.os.Bundle):53 -> onCreate
+    276:277:void requestNotificationPermissionIfNeeded():172:172 -> onCreate
+    276:277:void onCreate(android.os.Bundle):53 -> onCreate
+    278:279:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):164:164 -> onCreate
+    278:279:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
+    278:279:void requestNotificationPermissionIfNeeded():172 -> onCreate
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(2)"]}
-    268:269:void onCreate(android.os.Bundle):52 -> onCreate
-    270:271:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):164:164 -> onCreate
-    270:271:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
-    270:271:void requestNotificationPermissionIfNeeded():149 -> onCreate
+    278:279:void onCreate(android.os.Bundle):53 -> onCreate
+    280:281:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):164:164 -> onCreate
+    280:281:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
+    280:281:void requestNotificationPermissionIfNeeded():172 -> onCreate
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(2)"]}
-    270:271:void onCreate(android.os.Bundle):52 -> onCreate
+    280:281:void onCreate(android.os.Bundle):53 -> onCreate
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(3)"]}
-    272:285:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):164:164 -> onCreate
-    272:285:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
-    272:285:void requestNotificationPermissionIfNeeded():149 -> onCreate
+    282:295:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):164:164 -> onCreate
+    282:295:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
+    282:295:void requestNotificationPermissionIfNeeded():172 -> onCreate
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(2)"]}
-    272:285:void onCreate(android.os.Bundle):52 -> onCreate
-    286:290:void handleIntentExtras(android.content.Intent):171:171 -> onCreate
-    286:290:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):171 -> onCreate
-    286:290:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
-    286:290:void requestNotificationPermissionIfNeeded():149 -> onCreate
+    282:295:void onCreate(android.os.Bundle):53 -> onCreate
+    296:300:void requestNotificationPermissionIfNeeded():171:171 -> onCreate
+    296:300:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):171 -> onCreate
+    296:300:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
+    296:300:void requestNotificationPermissionIfNeeded():172 -> onCreate
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(3)"]}
-    286:290:void onCreate(android.os.Bundle):52 -> onCreate
-    291:299:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):173:173 -> onCreate
-    291:299:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
-    291:299:void requestNotificationPermissionIfNeeded():149 -> onCreate
+    296:300:void onCreate(android.os.Bundle):53 -> onCreate
+    301:309:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):173:173 -> onCreate
+    301:309:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
+    301:309:void requestNotificationPermissionIfNeeded():172 -> onCreate
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(2)"]}
-    291:299:void onCreate(android.os.Bundle):52 -> onCreate
-    300:304:void handleIntentExtras(android.content.Intent):175:175 -> onCreate
-    300:304:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):175 -> onCreate
-    300:304:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
-    300:304:void requestNotificationPermissionIfNeeded():149 -> onCreate
+    301:309:void onCreate(android.os.Bundle):53 -> onCreate
+    310:314:void requestNotificationPermissionIfNeeded():175:175 -> onCreate
+    310:314:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):175 -> onCreate
+    310:314:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
+    310:314:void requestNotificationPermissionIfNeeded():172 -> onCreate
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(3)"]}
-    300:304:void onCreate(android.os.Bundle):52 -> onCreate
-    305:305:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):176:176 -> onCreate
-    305:305:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
-    305:305:void requestNotificationPermissionIfNeeded():149 -> onCreate
+    310:314:void onCreate(android.os.Bundle):53 -> onCreate
+    315:315:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):176:176 -> onCreate
+    315:315:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
+    315:315:void requestNotificationPermissionIfNeeded():172 -> onCreate
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(2)"]}
-    305:305:void onCreate(android.os.Bundle):52 -> onCreate
-    306:331:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):166:166 -> onCreate
-    306:331:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
-    306:331:void requestNotificationPermissionIfNeeded():149 -> onCreate
+    315:315:void onCreate(android.os.Bundle):53 -> onCreate
+    316:341:void androidx.activity.result.ActivityResultRegistry$2.launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat):166:166 -> onCreate
+    316:341:void androidx.activity.result.ActivityResultLauncher.launch(java.lang.Object):47 -> onCreate
+    316:341:void requestNotificationPermissionIfNeeded():172 -> onCreate
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(2)"]}
-    306:331:void onCreate(android.os.Bundle):52 -> onCreate
-    332:335:void loadDashboard():128:128 -> onCreate
-    332:335:void onCreate(android.os.Bundle):48 -> onCreate
-    336:339:void loadDashboard():127:127 -> onCreate
-    336:339:void onCreate(android.os.Bundle):48 -> onCreate
-    340:343:void setupWebView$lambda$1(android.webkit.WebView):123:123 -> onCreate
-    340:343:void setupWebView():123 -> onCreate
-    340:343:void onCreate(android.os.Bundle):47 -> onCreate
-    344:347:void setupWebView():63:63 -> onCreate
-    344:347:void onCreate(android.os.Bundle):47 -> onCreate
-    348:355:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.bind(android.view.View):72:72 -> onCreate
-    348:355:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean):53 -> onCreate
-    348:355:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater):43 -> onCreate
-    348:355:void onCreate(android.os.Bundle):44 -> onCreate
-    356:367:void setupWebView():73:73 -> onCreate
-    356:367:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.bind(android.view.View):73 -> onCreate
-    356:367:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean):53 -> onCreate
-    356:367:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater):43 -> onCreate
-    356:367:void onCreate(android.os.Bundle):44 -> onCreate
-    6:16:boolean onCreateOptionsMenu(android.view.Menu):194:194 -> onCreateOptionsMenu
-    1:6:void onDestroy():213:213 -> onDestroy
-    7:21:void onDestroy():214:214 -> onDestroy
-    22:25:void onDestroy():216:216 -> onDestroy
-    6:8:void onNewIntent(android.content.Intent):56:56 -> onNewIntent
-    9:11:void onNewIntent(android.content.Intent):57:57 -> onNewIntent
-    12:15:void onNewIntent(android.content.Intent):58:58 -> onNewIntent
-    6:15:boolean onOptionsItemSelected(android.view.MenuItem):199:199 -> onOptionsItemSelected
-    16:39:boolean onOptionsItemSelected(android.view.MenuItem):201:201 -> onOptionsItemSelected
-    40:50:boolean onOptionsItemSelected(android.view.MenuItem):205:205 -> onOptionsItemSelected
-    51:55:boolean onOptionsItemSelected(android.view.MenuItem):208:208 -> onOptionsItemSelected
-    1:6:void attemptPendingDeepLink():184:184 -> r
-    7:8:void attemptPendingDeepLink():185:185 -> r
-    9:10:java.lang.String com.mufcabot.app.MainActivity$DeepLink.getTicker():29:29 -> r
-    9:10:void attemptPendingDeepLink():186 -> r
-    11:22:void attemptPendingDeepLink():186:186 -> r
+    316:341:void onCreate(android.os.Bundle):53 -> onCreate
+    342:345:void loadDashboard():151:151 -> onCreate
+    342:345:void onCreate(android.os.Bundle):49 -> onCreate
+    346:349:void loadDashboard():150:150 -> onCreate
+    346:349:void onCreate(android.os.Bundle):49 -> onCreate
+    350:353:void setupWebView$lambda$1(android.webkit.WebView):126:126 -> onCreate
+    350:353:void setupWebView():126 -> onCreate
+    350:353:void onCreate(android.os.Bundle):48 -> onCreate
+    354:357:void setupWebView():64:64 -> onCreate
+    354:357:void onCreate(android.os.Bundle):48 -> onCreate
+    358:365:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.bind(android.view.View):72:72 -> onCreate
+    358:365:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean):53 -> onCreate
+    358:365:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater):43 -> onCreate
+    358:365:void onCreate(android.os.Bundle):45 -> onCreate
+    366:377:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.bind(android.view.View):73:73 -> onCreate
+    366:377:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean):53 -> onCreate
+    366:377:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.databinding.ActivityMainBinding.inflate(android.view.LayoutInflater):43 -> onCreate
+    366:377:void onCreate(android.os.Bundle):45 -> onCreate
+    6:16:boolean onCreateOptionsMenu(android.view.Menu):217:217 -> onCreateOptionsMenu
+    1:6:void onDestroy():245:245 -> onDestroy
+    7:21:void onDestroy():246:246 -> onDestroy
+    22:25:void onDestroy():248:248 -> onDestroy
+    6:8:void onNewIntent(android.content.Intent):57:57 -> onNewIntent
+    9:11:void onNewIntent(android.content.Intent):58:58 -> onNewIntent
+    12:15:void onNewIntent(android.content.Intent):59:59 -> onNewIntent
+    6:15:boolean onOptionsItemSelected(android.view.MenuItem):222:222 -> onOptionsItemSelected
+    16:39:boolean onOptionsItemSelected(android.view.MenuItem):224:224 -> onOptionsItemSelected
+    40:50:boolean onOptionsItemSelected(android.view.MenuItem):228:228 -> onOptionsItemSelected
+    51:55:boolean onOptionsItemSelected(android.view.MenuItem):231:231 -> onOptionsItemSelected
+    1:3:void onPause():236:236 -> onPause
+    4:9:void onPause():239:239 -> onPause
+    10:26:void onPause():240:240 -> onPause
+    1:6:void attemptPendingDeepLink():207:207 -> r
+    7:8:void attemptPendingDeepLink():208:208 -> r
+    9:10:java.lang.String com.mufcabot.app.MainActivity$DeepLink.getTicker():30:30 -> r
+    9:10:void attemptPendingDeepLink():209 -> r
+    11:22:void attemptPendingDeepLink():209:209 -> r
     23:29:void attemptPendingDeepLink():0:0 -> r
       # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":101,"3":103,"6":106,"9":110,"12":115},"outline":"Landroidx/activity/g;j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"}
-    30:33:java.lang.String com.mufcabot.app.MainActivity$DeepLink.getTf():29:29 -> r
-    30:33:void attemptPendingDeepLink():187 -> r
-    34:37:void attemptPendingDeepLink():187:187 -> r
+    30:33:java.lang.String com.mufcabot.app.MainActivity$DeepLink.getTf():30:30 -> r
+    30:33:void attemptPendingDeepLink():210 -> r
+    34:37:void attemptPendingDeepLink():210:210 -> r
     38:45:void attemptPendingDeepLink():0:0 -> r
       # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":116,"3":118,"6":121,"9":125,"12":130},"outline":"Landroidx/activity/g;j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"}
-    46:47:java.lang.String com.mufcabot.app.MainActivity$DeepLink.getTab():29:29 -> r
-    46:47:void attemptPendingDeepLink():188 -> r
-    48:51:void attemptPendingDeepLink():188:188 -> r
+    46:47:java.lang.String com.mufcabot.app.MainActivity$DeepLink.getTab():30:30 -> r
+    46:47:void attemptPendingDeepLink():211 -> r
+    48:51:void attemptPendingDeepLink():211:211 -> r
     52:55:void attemptPendingDeepLink():0:0 -> r
       # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":131,"3":133,"6":136,"9":140,"12":145},"outline":"Landroidx/activity/g;j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"}
-    56:78:void attemptPendingDeepLink():189:189 -> r
+    56:78:void attemptPendingDeepLink():212:212 -> r
     79:82:void attemptPendingDeepLink():0:0 -> r
       # {"id":"com.android.tools.r8.outlineCallsite","positions":{"1":146,"4":148,"7":151},"outline":"Landroidx/activity/g;k(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"}
-    83:100:void attemptPendingDeepLink():190:190 -> r
-    101:101:void attemptPendingDeepLink():186:186 -> r
-    103:103:void attemptPendingDeepLink():186:186 -> r
-    106:106:void attemptPendingDeepLink():186:186 -> r
-    110:110:void attemptPendingDeepLink():186:186 -> r
-    115:115:void attemptPendingDeepLink():186:186 -> r
-    116:116:void attemptPendingDeepLink():187:187 -> r
-    118:118:void attemptPendingDeepLink():187:187 -> r
-    121:121:void attemptPendingDeepLink():187:187 -> r
-    125:125:void attemptPendingDeepLink():187:187 -> r
-    130:130:void attemptPendingDeepLink():187:187 -> r
-    131:131:void attemptPendingDeepLink():188:188 -> r
-    133:133:void attemptPendingDeepLink():188:188 -> r
-    136:136:void attemptPendingDeepLink():188:188 -> r
-    140:140:void attemptPendingDeepLink():188:188 -> r
-    145:145:void attemptPendingDeepLink():188:188 -> r
-    146:146:void attemptPendingDeepLink():189:189 -> r
-    148:148:void attemptPendingDeepLink():189:189 -> r
-    151:151:void attemptPendingDeepLink():189:189 -> r
-    1:9:void handleIntentExtras(android.content.Intent):168:168 -> s
-    10:11:void handleIntentExtras(android.content.Intent):169:169 -> s
-    12:17:void handleIntentExtras(android.content.Intent):171:171 -> s
-    18:23:void handleIntentExtras(android.content.Intent):172:172 -> s
-    24:28:void handleIntentExtras(android.content.Intent):169:169 -> s
-    29:36:void handleIntentExtras(android.content.Intent):174:174 -> s
-com.mufcabot.app.MainActivity$DeepLink -> h5.c:
+    83:100:void attemptPendingDeepLink():213:213 -> r
+    101:101:void attemptPendingDeepLink():209:209 -> r
+    103:103:void attemptPendingDeepLink():209:209 -> r
+    106:106:void attemptPendingDeepLink():209:209 -> r
+    110:110:void attemptPendingDeepLink():209:209 -> r
+    115:115:void attemptPendingDeepLink():209:209 -> r
+    116:116:void attemptPendingDeepLink():210:210 -> r
+    118:118:void attemptPendingDeepLink():210:210 -> r
+    121:121:void attemptPendingDeepLink():210:210 -> r
+    125:125:void attemptPendingDeepLink():210:210 -> r
+    130:130:void attemptPendingDeepLink():210:210 -> r
+    131:131:void attemptPendingDeepLink():211:211 -> r
+    133:133:void attemptPendingDeepLink():211:211 -> r
+    136:136:void attemptPendingDeepLink():211:211 -> r
+    140:140:void attemptPendingDeepLink():211:211 -> r
+    145:145:void attemptPendingDeepLink():211:211 -> r
+    146:146:void attemptPendingDeepLink():212:212 -> r
+    148:148:void attemptPendingDeepLink():212:212 -> r
+    151:151:void attemptPendingDeepLink():212:212 -> r
+    1:9:void handleIntentExtras(android.content.Intent):191:191 -> s
+    10:11:void handleIntentExtras(android.content.Intent):192:192 -> s
+    12:17:void handleIntentExtras(android.content.Intent):194:194 -> s
+    18:23:void handleIntentExtras(android.content.Intent):195:195 -> s
+    24:28:void handleIntentExtras(android.content.Intent):192:192 -> s
+    29:36:void handleIntentExtras(android.content.Intent):197:197 -> s
+com.mufcabot.app.MainActivity$ChartTouchBridge -> h5.d:
+# {"id":"sourceFile","fileName":"MainActivity.kt"}
+    com.mufcabot.app.MainActivity this$0 -> a
+    1:6:void <init>(com.mufcabot.app.MainActivity):142:142 -> <init>
+    1:11:void setChartTouching(boolean):145:145 -> setChartTouching
+com.mufcabot.app.MainActivity$ChartTouchBridge$$ExternalSyntheticLambda0 -> h5.c:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    com.mufcabot.app.MainActivity com.mufcabot.app.MainActivity$ChartTouchBridge$$InternalSyntheticLambda$2$8c30ded5b741d691225c4f7960b1321d54a0253bf18e20d38aee1c4188707683$0.f$0 -> f
+      # {"id":"com.android.tools.r8.synthesized"}
+    boolean com.mufcabot.app.MainActivity$ChartTouchBridge$$InternalSyntheticLambda$2$8c30ded5b741d691225c4f7960b1321d54a0253bf18e20d38aee1c4188707683$0.f$1 -> g
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:8:void h5.MainActivity$ChartTouchBridge$$ExternalSyntheticLambda0.<init>(com.mufcabot.app.MainActivity,boolean):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    1:7:void com.mufcabot.app.MainActivity$ChartTouchBridge.setChartTouching$lambda$0(com.mufcabot.app.MainActivity,boolean):0:0 -> run
+      # {"id":"com.android.tools.r8.residualsignature","signature":"()V"}
+    8:11:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.MainActivity.access$getBinding$p(com.mufcabot.app.MainActivity):24:24 -> run
+    8:11:void com.mufcabot.app.MainActivity$ChartTouchBridge.setChartTouching$lambda$0(com.mufcabot.app.MainActivity,boolean):145 -> run
+    12:30:void com.mufcabot.app.MainActivity$ChartTouchBridge.setChartTouching$lambda$0(com.mufcabot.app.MainActivity,boolean):145:145 -> run
+com.mufcabot.app.MainActivity$DeepLink -> h5.e:
 # {"id":"sourceFile","fileName":"MainActivity.kt"}
     java.lang.String tab -> a
     java.lang.String ticker -> b
     java.lang.String tf -> c
-    1:10:void <init>(java.lang.String,java.lang.String,java.lang.String):29:29 -> <init>
+    1:10:void <init>(java.lang.String,java.lang.String,java.lang.String):30:30 -> <init>
     5:46:boolean equals(java.lang.Object):0:0 -> equals
     1:33:int hashCode():0:0 -> hashCode
     30:36:java.lang.String toString():0:0 -> toString
@@ -145053,7 +145076,7 @@ com.mufcabot.app.MainActivity$DeepLink -> h5.c:
     37:37:java.lang.String toString():0:0 -> toString
     39:39:java.lang.String toString():0:0 -> toString
     42:42:java.lang.String toString():0:0 -> toString
-com.mufcabot.app.MainActivity$ensureFcmTokenRegistered$1 -> h5.d:
+com.mufcabot.app.MainActivity$ensureFcmTokenRegistered$1 -> h5.f:
 # {"id":"sourceFile","fileName":"MainActivity.kt"}
     int h5.MainActivity$ensureFcmTokenRegistered$1.$r8$classId -> f
       # {"id":"com.android.tools.r8.synthesized"}
@@ -145065,35 +145088,42 @@ com.mufcabot.app.MainActivity$ensureFcmTokenRegistered$1 -> h5.d:
     12:28:void com.mufcabot.app.SettingsActivity$onSaveClicked$1$1$1.invoke(java.lang.String):61:61 -> b
     12:28:java.lang.Object com.mufcabot.app.SettingsActivity$onSaveClicked$1$1$1.invoke(java.lang.Object):61 -> b
     29:31:java.lang.Object com.mufcabot.app.SettingsActivity$onSaveClicked$1$1$1.invoke(java.lang.Object):61:61 -> b
-    32:33:java.lang.Object invoke(java.lang.Object):134:134 -> b
-    34:50:void invoke(java.lang.String):134:134 -> b
-    34:50:java.lang.Object invoke(java.lang.Object):134 -> b
-    51:54:java.lang.Object invoke(java.lang.Object):134:134 -> b
-com.mufcabot.app.MainActivity$setupWebView$1 -> h5.e:
+    32:33:java.lang.Object invoke(java.lang.Object):157:157 -> b
+    34:50:void invoke(java.lang.String):157:157 -> b
+    34:50:java.lang.Object invoke(java.lang.Object):157 -> b
+    51:54:java.lang.Object invoke(java.lang.Object):157:157 -> b
+com.mufcabot.app.MainActivity$setupWebView$1 -> h5.g:
 # {"id":"sourceFile","fileName":"MainActivity.kt"}
     java.lang.String $dashboardHost -> a
     com.mufcabot.app.MainActivity this$0 -> b
-    5:8:void <init>(java.lang.String,com.mufcabot.app.MainActivity):73:73 -> <init>
-    1:3:void onPageFinished(android.webkit.WebView,java.lang.String):96:96 -> onPageFinished
-    4:9:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.MainActivity.access$getBinding$p(com.mufcabot.app.MainActivity):23:23 -> onPageFinished
-    4:9:void onPageFinished(android.webkit.WebView,java.lang.String):97 -> onPageFinished
-    10:18:void onPageFinished(android.webkit.WebView,java.lang.String):97:97 -> onPageFinished
-    19:20:void com.mufcabot.app.MainActivity.access$setPageLoaded$p(com.mufcabot.app.MainActivity,boolean):23:23 -> onPageFinished
-    19:20:void onPageFinished(android.webkit.WebView,java.lang.String):98 -> onPageFinished
-    21:24:void com.mufcabot.app.MainActivity.access$attemptPendingDeepLink(com.mufcabot.app.MainActivity):23:23 -> onPageFinished
+    5:8:void <init>(java.lang.String,com.mufcabot.app.MainActivity):74:74 -> <init>
+    1:3:void onPageFinished(android.webkit.WebView,java.lang.String):97:97 -> onPageFinished
+    4:8:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.MainActivity.access$getBinding$p(com.mufcabot.app.MainActivity):24:24 -> onPageFinished
+    4:8:void onPageFinished(android.webkit.WebView,java.lang.String):98 -> onPageFinished
+    9:20:void onPageFinished(android.webkit.WebView,java.lang.String):98:98 -> onPageFinished
+    21:24:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.MainActivity.access$getBinding$p(com.mufcabot.app.MainActivity):24:24 -> onPageFinished
     21:24:void onPageFinished(android.webkit.WebView,java.lang.String):99 -> onPageFinished
-    25:31:void onPageFinished(android.webkit.WebView,java.lang.String):97:97 -> onPageFinished
-    1:3:void onReceivedError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceError):107:107 -> onReceivedError
-    4:5:void onReceivedError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceError):108:108 -> onReceivedError
-    6:9:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.MainActivity.access$getBinding$p(com.mufcabot.app.MainActivity):23:23 -> onReceivedError
-    6:9:void onReceivedError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceError):108 -> onReceivedError
-    10:25:void onReceivedError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceError):108:108 -> onReceivedError
-    3:14:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):83:83 -> shouldOverrideUrlLoading
-    15:20:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):84:84 -> shouldOverrideUrlLoading
+    25:32:void onPageFinished(android.webkit.WebView,java.lang.String):99:99 -> onPageFinished
+    33:34:void com.mufcabot.app.MainActivity.access$setPageLoaded$p(com.mufcabot.app.MainActivity,boolean):24:24 -> onPageFinished
+    33:34:void onPageFinished(android.webkit.WebView,java.lang.String):100 -> onPageFinished
+    35:38:void com.mufcabot.app.MainActivity.access$attemptPendingDeepLink(com.mufcabot.app.MainActivity):24:24 -> onPageFinished
+    35:38:void onPageFinished(android.webkit.WebView,java.lang.String):101 -> onPageFinished
+    39:42:void onPageFinished(android.webkit.WebView,java.lang.String):99:99 -> onPageFinished
+    43:46:void onPageFinished(android.webkit.WebView,java.lang.String):98:98 -> onPageFinished
+    1:3:void onReceivedError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceError):109:109 -> onReceivedError
+    4:8:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.MainActivity.access$getBinding$p(com.mufcabot.app.MainActivity):24:24 -> onReceivedError
+    4:8:void onReceivedError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceError):110 -> onReceivedError
+    9:20:void onReceivedError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceError):110:110 -> onReceivedError
+    21:24:com.mufcabot.app.databinding.ActivityMainBinding com.mufcabot.app.MainActivity.access$getBinding$p(com.mufcabot.app.MainActivity):24:24 -> onReceivedError
+    21:24:void onReceivedError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceError):111 -> onReceivedError
+    25:37:void onReceivedError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceError):111:111 -> onReceivedError
+    38:41:void onReceivedError(android.webkit.WebView,android.webkit.WebResourceRequest,android.webkit.WebResourceError):110:110 -> onReceivedError
+    3:14:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):84:84 -> shouldOverrideUrlLoading
+    15:20:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):85:85 -> shouldOverrideUrlLoading
     21:26:boolean kotlin.jvm.internal.Intrinsics.areEqual(java.lang.Object,java.lang.Object):169:169 -> shouldOverrideUrlLoading
-    21:26:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):84 -> shouldOverrideUrlLoading
-    27:44:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):86:86 -> shouldOverrideUrlLoading
-    45:55:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):88:88 -> shouldOverrideUrlLoading
+    21:26:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):85 -> shouldOverrideUrlLoading
+    27:44:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):87:87 -> shouldOverrideUrlLoading
+    45:55:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):89:89 -> shouldOverrideUrlLoading
 com.mufcabot.app.MufcaApp -> com.mufcabot.app.MufcaApp:
 # {"id":"sourceFile","fileName":"MufcaApp.kt"}
     1:4:void <init>():8:8 -> <init>
@@ -145283,7 +145313,7 @@ com.mufcabot.app.SettingsActivity -> com.mufcabot.app.SettingsActivity:
     27:51:void showStatus(java.lang.String,boolean):80:80 -> r
     52:55:void showStatus(java.lang.String,boolean):79:79 -> r
     56:59:void showStatus(java.lang.String,boolean):78:78 -> r
-com.mufcabot.app.SettingsActivity$$ExternalSyntheticLambda2 -> h5.f:
+com.mufcabot.app.SettingsActivity$$ExternalSyntheticLambda2 -> h5.h:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
     com.mufcabot.app.SettingsActivity com.mufcabot.app.SettingsActivity$$InternalSyntheticLambda$3$14390fa6dbbc52b38414c0cf3bda89517ece1e31660095b693c73d3cbacca654$0.f$0 -> f
