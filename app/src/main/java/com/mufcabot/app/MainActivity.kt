@@ -8,6 +8,7 @@ import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.webkit.JavascriptInterface
 import android.webkit.SslErrorHandler
 import android.webkit.WebResourceError
 import android.webkit.WebResourceRequest
@@ -95,6 +96,7 @@ class MainActivity : AppCompatActivity() {
             override fun onPageFinished(view: WebView?, url: String?) {
                 super.onPageFinished(view, url)
                 binding.swipeRefresh.isRefreshing = false
+                binding.swipeRefresh.isEnabled = true
                 pageLoaded = true
                 attemptPendingDeepLink()
             }
@@ -106,6 +108,7 @@ class MainActivity : AppCompatActivity() {
             ) {
                 super.onReceivedError(view, request, error)
                 binding.swipeRefresh.isRefreshing = false
+                binding.swipeRefresh.isEnabled = true
             }
 
             override fun onReceivedSslError(view: WebView?, handler: SslErrorHandler?, error: SslError?) {
@@ -121,6 +124,26 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.swipeRefresh.setOnRefreshListener { webView.reload() }
+
+        // 🆕 FIX: SwipeRefreshLayout оборачивает WebView и перехватывает
+        // вертикальные свайпы для pull-to-refresh — это конкурирует с
+        // touch-хендлингом графика (lightweight-charts) внутри WebView за один
+        // и тот же жест. Результат — свайп по графику то панит его, то
+        // случайно триггерит reload страницы, непредсказуемо. ChartPanel.jsx
+        // сообщает через этот мост, когда палец реально на графике
+        // (touchstart/touchend на контейнере чарта), и мы на это время
+        // отключаем SwipeRefreshLayout. В обычном браузере (веб-версия
+        // дашборда) window.AndroidChartBridge просто не существует — вызовы
+        // там no-op по feature-detection в JS, эта правка ничего не ломает
+        // вне Android-клиента.
+        webView.addJavascriptInterface(ChartTouchBridge(), "AndroidChartBridge")
+    }
+
+    private inner class ChartTouchBridge {
+        @JavascriptInterface
+        fun setChartTouching(active: Boolean) {
+            runOnUiThread { binding.swipeRefresh.isEnabled = !active }
+        }
     }
 
     private fun loadDashboard() {
@@ -206,6 +229,15 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        // Safety net: если жест прервался фоном/сворачиванием до touchend, не
+        // оставляем pull-to-refresh навсегда заблокированным (см. ChartTouchBridge).
+        if (::binding.isInitialized) {
+            binding.swipeRefresh.isEnabled = true
         }
     }
 
