@@ -16,3 +16,6 @@ google-services.json
 # Подписи релизных сборок — никогда не коммитить
 *.jks
 *.keystore
+
+# Build output
+/app/build/

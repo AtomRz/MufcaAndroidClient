@@ -32,7 +32,21 @@ object Prefs {
     private const val KEY_USERNAME = "username"
     private const val KEY_PASSWORD = "password"
 
+    // 🆕 FIX: prefs() used to build a MasterKey + EncryptedSharedPreferences on EVERY
+    // call (Keystore round-trips, tens of ms each, and several calls per screen).
+    // It also meant that if the Keystore failed only intermittently, one call could
+    // read the encrypted file and the next the plain fallback — so the saved config
+    // would randomly appear and disappear. Resolve it once per process and reuse it.
+    @Volatile private var cached: SharedPreferences? = null
+
     private fun prefs(context: Context): SharedPreferences {
+        cached?.let { return it }
+        return synchronized(this) {
+            cached ?: create(context.applicationContext).also { cached = it }
+        }
+    }
+
+    private fun create(context: Context): SharedPreferences {
         return try {
             val masterKey = MasterKey.Builder(context)
                 .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
