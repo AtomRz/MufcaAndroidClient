@@ -31,8 +31,15 @@ class SettingsActivity : AppCompatActivity() {
         val username = binding.inputUsername.text.toString().trim()
         val password = binding.inputPassword.text.toString()
 
-        if (serverUrl.isBlank() || (!serverUrl.startsWith("http://") && !serverUrl.startsWith("https://"))) {
-            showStatus("Server URL must start with http:// or https://", isError = true)
+        val lower = serverUrl.lowercase()
+        if (!lower.startsWith("http://") && !lower.startsWith("https://")) {
+            showStatus("Server URL must start with https://", isError = true)
+            return
+        }
+        // 🆕 FIX: the manifest/network config forbid cleartext, so http:// always failed
+        // with the cryptic "Cleartext HTTP traffic not permitted". Say so up front.
+        if (lower.startsWith("http://")) {
+            showStatus("Plain http:// is blocked by the app's security config — use an https:// address", isError = true)
             return
         }
 
@@ -43,6 +50,8 @@ class SettingsActivity : AppCompatActivity() {
         Thread {
             val error = ApiClient.testConnection(serverUrl, username, password)
             runOnUiThread {
+                // 🆕 FIX: the user may have left the screen while the test was running
+                if (isFinishing || isDestroyed) return@runOnUiThread
                 binding.btnSave.isEnabled = true
                 if (error != null) {
                     showStatus(error, isError = true)

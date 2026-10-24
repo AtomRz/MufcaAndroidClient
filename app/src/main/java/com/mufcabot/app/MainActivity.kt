@@ -83,6 +83,10 @@ class MainActivity : AppCompatActivity() {
             ): Boolean {
                 val requestedHost = request?.url?.host
                 if (dashboardHost != null && requestedHost != null && requestedHost != dashboardHost) {
+                    // 🆕 FIX: only hand http(s) links to other apps — an arbitrary scheme
+                    // (intent:, market:, file:…) from a page must never be launched.
+                    val scheme = request.url.scheme
+                    if (scheme != "http" && scheme != "https") return true
                     try {
                         startActivity(Intent(Intent.ACTION_VIEW, request.url))
                     } catch (e: Exception) {
@@ -109,6 +113,16 @@ class MainActivity : AppCompatActivity() {
                 super.onReceivedError(view, request, error)
                 binding.swipeRefresh.isRefreshing = false
                 binding.swipeRefresh.isEnabled = true
+                // 🆕 FIX: a failed load left a blank/default Chromium error page with no
+                // hint what happened. Tell the user (main frame only — sub-resource
+                // errors such as a missing favicon are not worth a toast).
+                if (request?.isForMainFrame == true) {
+                    android.widget.Toast.makeText(
+                        this@MainActivity,
+                        "Could not load dashboard: ${error?.description ?: "unknown error"}. Pull down to retry.",
+                        android.widget.Toast.LENGTH_LONG,
+                    ).show()
+                }
             }
 
             override fun onReceivedSslError(view: WebView?, handler: SslErrorHandler?, error: SslError?) {
@@ -206,12 +220,21 @@ class MainActivity : AppCompatActivity() {
     private fun attemptPendingDeepLink() {
         val link = pendingDeepLink ?: return
         pendingDeepLink = null
-        val tickerArg = link.ticker?.let { "\"${it.replace("\"", "")}\"" } ?: "null"
-        val tfArg = link.tf?.let { "\"${it.replace("\"", "")}\"" } ?: "null"
-        val tabArg = "\"${link.tab.replace("\"", "")}\""
-        val js = "window.mufcaOpenSignal && window.mufcaOpenSignal($tickerArg, $tfArg, $tabArg);"
+        val tickerArg = link.ticker?.let { jsString(it) } ?: "null"
+        val tfArg = link.tf?.let { jsString(it) } ?: "null"
+        val tabArg = jsString(link.tab)
+        // 🆕 FIX: onPageFinished fires when the HTML/JS bundle has loaded, but the React
+        // app registers window.mufcaOpenSignal only after it mounts (and, after a
+        // cold start, after login) — so a one-shot call usually found it undefined
+        // and the tap opened the default tab. Poll for up to ~15 s instead.
+        val js = "(function t(n){ if (window.mufcaOpenSignal) { window.mufcaOpenSignal($tickerArg, $tfArg, $tabArg); } " +
+            "else if (n > 0) { setTimeout(function(){ t(n - 1) }, 500); } })(30);"
         binding.webview.evaluateJavascript(js, null)
     }
+
+    // 🆕 FIX: stripping only `"` still let a backslash or newline from the push
+    // payload break (or inject into) the JS string. Quote it properly via JSONObject.
+    private fun jsString(v: String): String = org.json.JSONObject.quote(v)
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
